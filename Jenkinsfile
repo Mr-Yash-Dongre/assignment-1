@@ -13,11 +13,11 @@ pipeline{
         }
       }
       steps{
-        sh "sudo mkdir /mnt/22Q2"
+        /*sh "sudo mkdir /mnt/22Q2"*/
         sh "sudo chmod -R 777 /mnt/22Q2"
       }
     }
-    stage('copy file to slave-1'){
+    stage('copy file to slave'){
       agent{
         node{
           label 'master'
