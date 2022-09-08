@@ -24,7 +24,6 @@ pipeline{
         }
       }
       steps{
-        sh "chmod -R 400 /mnt/projects/22Q3/23mayohio.pem"
         sh "scp -i 23mayohio.pem index.html ec2-user@172.31.1.19:/mnt/22Q3"
       }
     }
