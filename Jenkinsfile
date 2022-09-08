@@ -17,7 +17,7 @@ pipeline{
         sh "sudo chmod -R 777 /mnt/22Q3"
       }
     }
-    stage('copy file to slave-1'){
+    stage('copy file to slave'){
       agent{
         node{
           label 'master'
