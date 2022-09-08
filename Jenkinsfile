@@ -34,7 +34,7 @@ pipeline{
         }
       }
       steps{
-        sh "sudo cp -r /mnt/index.html /var/www/html"
+        sh "sudo cp -r /mnt/index.html /var/www/html/"
         sh "sudo chmod -R /var/www/html/index.html"
       }
     }
