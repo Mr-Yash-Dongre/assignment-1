@@ -24,6 +24,7 @@ pipeline{
         }
       }
       steps{
+        sh "cp -r /23mayohio.pem ."
         sh "scp -i 23mayohio.pem index.html ec2-user@172.31.1.19:/mnt/22Q3"
       }
     }
