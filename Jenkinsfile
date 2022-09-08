@@ -13,7 +13,7 @@ pipeline{
         }
       }
       steps{
-        sh "sudo mkdir /mnt/22Q1"
+        /* sh "sudo mkdir /mnt/22Q1" */
         sh "sudo chmod -R 777 /mnt/22Q1"
       }
     }
