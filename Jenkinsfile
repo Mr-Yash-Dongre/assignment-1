@@ -36,7 +36,7 @@ pipeline{
       steps{
         sh "sudo yum install httpd -y"
         sh "sudo cp -r /mnt/index.html /var/www/html/"
-        sh "sudo chmod -R /var/www/html/index.html"
+        sh "sudo chmod -R 777 /var/www/html/index.html"
         sh "sudo service httpd start"
       }
     }
