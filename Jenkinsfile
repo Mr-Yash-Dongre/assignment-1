@@ -13,7 +13,7 @@ pipeline{
         }
       }
       steps{
-        sh "sudo chmod -R 777 /mnt/22Q1"
+        sh "sudo chmod -R 777 /mnt"
       }
     }
     stage('copy file to slave-1'){
